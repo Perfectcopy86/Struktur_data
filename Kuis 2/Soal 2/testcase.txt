@@ -1,0 +1,21 @@
+Contoh Masukan
+6
+scada desaingrafis 10
+profile animasi 1
+mitrakasih game 2
+jepun desaingrafis 3
+tera logo 11
+nada animasi 5
+2
+
+
+Contoh Keluaran
+pekerjaan yang telah selesai:
+profile animasi 1
+mitrakasih game 2
+
+pekerjaan yang masih menanti:
+jepun desaingrafis 3
+scada desaingrafis 10
+nada animasi 5
+tera logo 11

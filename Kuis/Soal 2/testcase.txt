@@ -1,0 +1,71 @@
+Contoh Masukan
+4
+h89 k99
+f34 d34
+j98 c90
+h47 v12
+y34 u44
+e23 d56
+z12 m45
+v43 g22
+1
+
+
+Contoh Keluaran
+y34 u44
+f34 d34
+j98 c90
+v43 g22
+
+h89 k99
+e23 d56
+z12 m45
+h47 v12
+
+		
+Contoh Masukan 2
+10
+g23 h12
+y12 y67
+u72 j88
+k12 g23
+y34 u44
+e23 d56
+w12 v78
+i89 k34
+g56 b27
+v78 h89
+h89 k99
+f34 d34
+j98 c90
+h47 v12
+k29 n87
+x87 g56
+z12 m45
+v43 g22
+m37 f75
+b23 26
+4
+
+
+Contoh Keluaran 2
+h89 k99
+f34 d34
+j98 c90
+h47 v12
+y34 u44
+e23 d56
+z12 m45
+v43 g22
+m37 f75
+b23 26
+g23 h12
+y12 y67
+u72 j88
+k12 g23
+k29 n87
+x87 g56
+w12 v78
+i89 k34
+g56 b27
+v78 h89

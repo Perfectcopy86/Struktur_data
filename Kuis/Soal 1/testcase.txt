@@ -1,0 +1,43 @@
+3
+sepeda polygon seri590
+action_figure naruto sakura
+sepatu reebok seri234H
+
+
+Contoh Keluaran
+action_figure naruto sakura
+sepatu reebok seri234H
+sepeda polygon seri590
+
+		
+Contoh Masukan 2
+13
+sepeda polygon seri590
+sepeda bikeX seri897
+action_figure gundam seriX
+action_figure haikyuu bokuto
+action_figure naruto sakura
+sepatu puma seri876D
+sepatu puma seri632
+action_figure saint_seiya seiya
+action_figure sailor_moon usagi
+sepeda brompton seri405
+sepatu nike seriAN34
+sepatu sketcher seri634walk
+sepatu reebok seri234H
+
+
+Contoh Keluaran 2
+action_figure sailor_moon usagi
+action_figure saint_seiya seiya
+action_figure naruto sakura
+action_figure haikyuu bokuto
+action_figure gundam seriX
+sepatu reebok seri234H
+sepatu sketcher seri634walk
+sepatu nike seriAN34
+sepatu puma seri632
+sepatu puma seri876D
+sepeda brompton seri405
+sepeda bikeX seri897
+sepeda polygon seri590

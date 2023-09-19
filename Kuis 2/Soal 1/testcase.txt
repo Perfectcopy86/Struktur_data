@@ -1,0 +1,60 @@
+Contoh Masukan
+6
+sukirman JNT Bandung 1
+sudirman JNE Bandung 2
+sudiran Pos Cimahi 1
+diana Pos Cimenyan 1
+diara JNE Banjaran 5
+dinana JNT Jakarta 2
+3
+JNT
+JNE
+Pos
+
+
+Contoh Keluaran
+stack JNT:
+sukirman JNT Bandung 1
+dinana JNT Jakarta 2
+
+stack JNE:
+sudirman JNE Bandung 2
+diara JNE Banjaran 5
+
+stack Pos:
+sudiran Pos Cimahi 1
+diana Pos Cimenyan 1
+
+		
+Contoh Masukan 2
+6
+sukirman JNT Bandung 1
+sudirman JNE Bandung 2
+sudiran Pos Cimahi 1
+diana SiCepat Cimenyan 1
+diara JNE Banjaran 5
+dinana JNT Jakarta 2
+4
+JNT
+JNE
+Pos
+SiCepat
+
+
+Contoh Keluaran 2
+stack JNT:
+sukirman JNT Bandung 1
+dinana JNT Jakarta 2
+
+stack JNE:
+sudirman JNE Bandung 2
+diara JNE Banjaran 5
+
+stack Pos:
+sudiran Pos Cimahi 1
+
+stack SiCepat:
+diana SiCepat Cimenyan 1
+
+	       
+
