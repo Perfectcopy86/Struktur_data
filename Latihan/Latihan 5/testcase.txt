@@ -1,0 +1,33 @@
+Contoh Masukan
+
+3
+box_baju 2003
+kemeja
+kaus
+jubah
+baju
+box_celana 2011
+jeans
+jogger
+chinos
+cargo
+box_minuman 2002
+aqua
+pocari_sweat
+mizone
+teh_botol
+
+
+Contoh Keluaran
+
+box_celana 2011
+- jeans
+- chinos
+==================
+box_minuman 2002
+- teh_botol
+- aqua
+- pocari_sweat
+- mizone
+==================
+list kosong

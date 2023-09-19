@@ -1,0 +1,45 @@
+Contoh Masukan
+soto 8000
+ayam_geprek 10000
+seblak_ceker 6500
+nasi_goreng 15000
+mie_ayam_bakso 10500
+fried_chicken 8500
+
+Contoh Keluaran
+S1:
+- Stack Kosong
+S2:
+- Stack Kosong
+==================
+S1:
+1. soto
+S2:
+1. seblak_ceker
+2. ayam_geprek
+==================
+S1:
+1. nasi_goreng
+2. seblak_ceker
+S2:
+1. fried_chicken
+2. ayam_geprek
+==================
+
+
+printStack S1
+printStack S2
+push S1
+push S2
+push S2
+printStack S1
+printStack S2
+pop S1
+pop S2 ke S1
+push S1
+push S2
+push S1
+pop S2
+pop S1 ke S2
+printStack S1
+printStack S2
