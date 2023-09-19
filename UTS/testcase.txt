@@ -1,0 +1,45 @@
+4
+perA perusahaanA
+3
+perA zondia 3 2022
+perA etilen 3 2022
+perA glikol 4 2022
+perB perusahaanB
+1
+perB etilen 6 2022
+perC perusahaanC
+4
+perC glikoral 7 2022
+perC etanol 6 2022
+perC glikogen 12 2022
+perC mefenamat 3 2022
+perD perusahaanD
+4
+perD mefenamat 3 2022
+perD etilen 3 2022
+perD glikol 4 2022
+perD glikoral 8 2023
+3
+etilen 3 2022
+mefenamat 3 2022
+glikol 4 2022
+
+
+Contoh Keluaran
+perA perusahaanA
+- perA zondia 3 2022
+perB perusahaanB
+- perB etilen 6 2022
+perC perusahaanC
+- perC glikoral 7 2022
+- perC etanol 6 2022
+- perC glikogen 12 2022
+perD perusahaanD
+- perD glikoral 8 2023
+org OrganisasiPengawas
+- perA etilen 3 2022
+- perD etilen 3 2022
+- perC mefenamat 3 2022
+- perD mefenamat 3 2022
+- perA glikol 4 2022
+- perD glikol 4 2022

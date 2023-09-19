@@ -1,0 +1,83 @@
+Contoh Masukan
+
+tahu 29
+tempe 8
+telur 2
+buncis 13
+--stop--
+
+
+Contoh Keluaran
+
+==== Inventory Dapur ====
+List semua bahan:
+29 tahu
+13 buncis
+08 tempe
+02 telur
+
+List bahan kadaluarsa:
+08 tempe
+02 telur
+
+List bahan sisa:
+13 buncis
+29 tahu
+=========================
+
+		
+Contoh Masukan 2
+
+Kangkung 11
+Wortel 22
+Selada 30
+Alpukat 9
+--stop--
+
+
+Contoh Keluaran 2
+
+==== Inventory Dapur ====
+List semua bahan:
+30 Selada
+22 Wortel
+11 Kangkung
+09 Alpukat
+
+List bahan kadaluarsa:
+-
+
+List bahan sisa:
+09 Alpukat
+11 Kangkung
+30 Selada
+22 Wortel
+=========================
+
+	       
+Contoh Masukan 3
+
+Susu 8
+Santan 2
+--stop--
+
+Santan 2
+Susu 8
+--stop--
+
+
+Contoh Keluaran 3
+
+==== Inventory Dapur ====
+List semua bahan:
+08 Susu
+02 Santan
+
+List bahan kadaluarsa:
+08 Susu
+02 Santan
+
+List bahan sisa:
+-
+=========================
+

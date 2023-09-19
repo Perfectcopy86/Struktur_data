@@ -1,0 +1,41 @@
+Contoh Masukan
+
+AnakKakiGunung CitraSinema 5.0
+WeOwnThisCity HBO 3.5
+Dark Netflix 4.3
+TheHauntingOfHillHouse Netflix 3.9
+TheWheelOfTime Amazon 4.6
+-
+judul
+asc
+
+
+Contoh Keluaran
+
+AnakKakiGunung - CitraSinema
+Dark - Netflix
+TheHauntingOfHillHouse - Netflix
+TheWheelOfTime - Amazon
+WeOwnThisCity - HBO
+
+
+	
+Contoh Masukan 2
+
+AnakKakiGunung CitraSinema 5.0
+WeOwnThisCity HBO 3.5
+Dark Netflix 4.3
+TheHauntingOfHillHouse Netflix 3.9
+TheWheelOfTime Amazon 4.6
+-
+rating
+desc
+
+
+Contoh Keluaran 2
+
+AnakKakiGunung - CitraSinema
+TheWheelOfTime - Amazon
+Dark - Netflix
+TheHauntingOfHillHouse - Netflix
+WeOwnThisCity - HBO

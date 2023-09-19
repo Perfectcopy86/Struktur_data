@@ -1,0 +1,70 @@
+#include <stdio.h>
+
+
+#define MAX_NODES 100
+
+// This structure represents a node in the graph.
+typedef struct {
+  int value; // The value of the node.
+  int weight; // The weight of the edge connecting this node to its parent.
+} Node;
+
+// This structure represents a graph.
+typedef struct {
+  Node nodes[MAX_NODES]; // An array of nodes.
+  int numNodes; // The number of nodes in the graph.
+  int adjacencyMatrix[MAX_NODES][MAX_NODES]; // The adjacency matrix representing the graph.
+} Graph;
+
+// This function finds all possible paths from the start node to the end node in the given graph,
+// and calculates the sum of the weights of the edges along the path.
+void findPaths(Graph* graph, char start, char end, char path[], int pathLen, int pathWeights[], int pathWeightsLen, int sum) {
+  if (start == end) {
+    // We have reached the end node, so we print the path and the sum of the weights of the edges.
+       for (int i = 0; i < pathLen; i++)
+        {
+            if (i != pathLen - 1)
+            {
+                printf("%c ", path[i]);
+            }
+            else
+            {
+                printf("%c %d\n", path[i], sum);
+            }
+        }
+
+  } else {
+    // Recursively search for paths from the start node to the end node.
+    for (int i = 0; i < graph->numNodes; i++) {
+      if (graph->adjacencyMatrix[start - 'A'][i] > 0) {
+        // There is an edge between start and i, so we add i to the path, add the weight of the edge to the sum,
+        // and continue the search.
+        path[pathLen] = i + 'A';
+        pathWeights[pathWeightsLen] = graph->adjacencyMatrix[start - 'A'][i];
+        findPaths(graph, i + 'A', end, path, pathLen + 1, pathWeights, pathWeightsLen + 1, sum + graph->adjacencyMatrix[start - 'A'][i]);
+      }
+    }
+  }
+}
+
+
+
+int main(void) {
+  // Create the graph.
+  Graph graph;
+  graph.numNodes = 7;
+
+  graph.adjacencyMatrix['A' - 'A']['B' - 'A'] = 1;
+  graph.adjacencyMatrix['B' - 'A']['C' - 'A'] = 6;
+  graph.adjacencyMatrix['B' - 'A']['D' - 'A'] = 2;
+  graph.adjacencyMatrix['C' - 'A']['E' - 'A'] = 1;
+  graph.adjacencyMatrix['D' - 'A']['G' - 'A'] = 3;
+  graph.adjacencyMatrix['E' - 'A']['G' - 'A'] = 3;
+  graph.adjacencyMatrix['E' - 'A']['F' - 'A'] = 4;
+  // Find all possible paths from node A to node D.
+  char path[MAX_NODES];
+  int pathWeights[MAX_NODES];
+  findPaths(&graph, 'B', 'G', path, 0, pathWeights, 0, 0);
+
+  return 0;
+}

@@ -1,0 +1,31 @@
+Contoh Masukan
+3
+2009 Dear_God A7X
+2018 Bury_The_Light DMC5
+2010 Isabella ST12
+
+Contoh Keluaran
+Playlist Musik Rock:
+===================
+BUKAN ANAK ROCK!
+
+Playlist Musik Pop:
+===================
+1. Dear_God
+2. Bury_The_Light
+3. Isabella
+		
+Contoh Masukan 2
+2
+2020 Hurts Joy_Crookes
+2015 Sugar Robin_Schulz
+
+Contoh Keluaran 2
+Playlist Musik Rock:
+===================
+1. Hurts
+2. Sugar
+
+Playlist Musik Pop:
+===================
+BUKAN ANAK POP!

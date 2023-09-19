@@ -1,0 +1,101 @@
+void selection_sort(list *L, int option)
+{                                // selection sort pada list
+    elemen *key, *temp, *before; // elemet untuk penunjuk
+    int tukar;                   // variabel penanda loop
+    do
+    {                     // loop
+        tukar = 0;        // tukar diisi 0
+        key = (*L).first; // key diisi first element
+        temp = key->next; // temp isi elemen setelah key
+        if (option == 1)
+        { // sort berdasarkan title ascending
+            while (temp != NULL)
+            { // selama temp tidak null
+                if (strcmp(key->kontainer.judul, temp->kontainer.judul) > 0)
+                {                                         // kondisi sort
+                    pindah_pointer(L, before, key, temp); // saling tukar pointer next nya dengan prosedur
+                    before = temp;                        // before diisi nilai temp
+                    tukar = 1;                            // tandai terjadi penukaran
+                }
+                else
+                {                    // jika tidak
+                    before = key;    // key sekarang jadi before
+                    key = key->next; // key lanjut maju ke depan
+                }
+                temp = key->next; // temp maju di depan key
+            }
+        }
+        else if (option == 2)
+        { // sorting berdasarkan judul descending
+            while (temp != NULL)
+            { // prosesnya sama seperti yang diatas
+                if (strcmp(key->container.judul, temp->container.judul) < 0)
+                { // cuma beda di sini, kondisinya
+                    pindah_pointer(L, before, key, temp);
+                    before = temp;
+                    tukar = 1;
+                }
+                else
+                {
+                    before = key;
+                    key = key->next;
+                }
+                temp = key->next;
+            }
+        }
+        else if (option == 3)
+        { // sorting berdasarkan raring ascending
+            while (temp != NULL)
+            { // sama kayak yang diatas, cuma beda kondisi if
+                if (key->container.rating > temp->container.rating)
+                {
+                    pindah_pointer(L, before, key, temp);
+                    before = temp;
+                    tukar = 1;
+                }
+                else
+                {
+                    before = key;
+                    key = key->next;
+                }
+                temp = key->next;
+            }
+        }
+        else if (option == 4)
+        { // sorting berdasarkan raring descending
+            while (temp != NULL)
+            { // sama kayak yang diatas, cuma beda kondisi if
+                if (key->container.rating < temp->container.rating)
+                {
+                    pindah_pointer(L, before, key, temp);
+                    before = temp;
+                    tukar = 1;
+                }
+                else
+                {
+                    before = key;
+                    key = key->next;
+                }
+                temp = key->next;
+            }
+        }
+    } while (tukar == 1); // looping trus selama masih ada proses penukaran
+}
+
+void pindah_pointer(list *L, elemen *before, elemen *key, elemen *temp)
+{ // tukar pointer
+    if (key == (*L).first)
+    {                      // jika  key masih di first
+        (*L).first = temp; // first tunjuk ke temp
+        temp->prev = NULL;
+        before = (*L).first; // before tunjuk ke first
+        before->prev = NULL;
+    }
+    else
+    {                        // jika tidak
+        before->next = temp; // before next tunjuk ke temp
+    }
+    key->next = temp->next; // key next tunjuk ke temp next
+    key->prev = temp;
+    temp->next = key; // temp next tunjuk ke key
+}

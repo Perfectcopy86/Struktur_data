@@ -1,0 +1,84 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#define MAX_NODES 100
+
+// Define a structure to represent a node in the graph
+struct Node {
+  int value;
+  int weight;
+  struct Node* next;
+};
+
+// Define a structure to represent a graph
+struct Graph {
+  int num_nodes;
+  struct Node* nodes[MAX_NODES];
+};
+
+// Function to create a new node
+struct Node* createNode(int value, int weight) {
+  struct Node* node = malloc(sizeof(struct Node));
+  node->value = value;
+  node->weight = weight;
+  node->next = NULL;
+  return node;
+}
+
+// Function to create a new graph
+struct Graph* createGraph(int num_nodes) {
+  struct Graph* graph = malloc(sizeof(struct Graph));
+  graph->num_nodes = num_nodes;
+  for (int i = 0; i < num_nodes; i++) {
+    graph->nodes[i] = NULL;
+  }
+  return graph;
+}
+
+// Function to add an edge to the graph
+void addEdge(struct Graph* graph, int src, int dest, int weight) {
+  // Create a new node for the destination
+  struct Node* node = createNode(dest, weight);
+
+  // Insert the node at the beginning of the linked list for the source node
+  node->next = graph->nodes[src];
+  graph->nodes[src] = node;
+}
+
+// Recursive function to print all paths with sum weight in the graph
+void printPaths(struct Graph* graph, int src, int dest, int sum, int* path, int path_index) {
+  // Add the current node to the path
+  path[path_index] = src;
+  path_index++;
+
+  // If the current node is the destination, print the path
+  if (src == dest) {
+    printf("Path: ");
+    for (int i = 0; i < path_index; i++) {
+      printf("%d ", path[i]);
+    }
+    printf("\n");
+    return;
+  }
+
+  // Recurse through the linked list of the current node
+  struct Node* current = graph->nodes[src];
+  while (current != NULL) {
+    // Update the sum with the weight of the current edge
+    sum += current->weight;
+    printPaths(graph, current->value, dest, sum, path, path_index);
+
+    // Remove the weight of the current edge from the sum before moving on to the next edge
+    sum -= current->weight;
+    current = current->next;
+  }
+}
+
+int main(void) {
+  // Create a graph with 5 nodes
+  struct Graph* graph = createGraph(5);
+
+  // Add some edges to the graph
+  addEdge(graph, 0, 1, 1);
+  addEdge(graph, 0, 2, 1);
+  addEdge(graph, 0,
