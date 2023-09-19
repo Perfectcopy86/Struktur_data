@@ -1,0 +1,29 @@
+Contoh Masukan
+
+Lala 20001 A
+Lili 20002 B
+Lulu 20003 O
+Lele 20004 AB
+Lolo 20005 A
+Lila 20006 B
+Lalu 20007 A
+
+
+Contoh Keluaran
+
+Data Golongan Darah
+===================
+Lili 20002 B
+Lulu 20003 O
+Lala 20001 A
+===================
+Lolo 20005 A
+Lele 20004 AB
+Lila 20006 B
+Lala 20001 A
+===================
+Lalu 20007 A
+Lila 20006 B
+Lolo 20005 A
+===================
+List Kosong

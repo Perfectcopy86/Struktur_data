@@ -1,0 +1,29 @@
+Contoh Masukan
+
+Kura-Kura 19/08/2020 5
+Jerapah 04/12/2021 2
+Gajah 28/10/2018 4
+Harimau 22/07/2022 2
+Dugong 29/09/2022 1
+Laba-Laba 15/04/2020 53
+Rusa 01/01/2021 16
+
+
+Contoh Keluaran
+
+Data Kebun Binatang
+===================
+19/08/2020 Kura-Kura 5
+28/10/2018 Gajah 4
+04/12/2021 Jerapah 2
+===================
+22/07/2022 Harimau 2
+29/09/2022 Dugong 1
+28/10/2018 Gajah 4
+===================
+29/09/2022 Dugong 1
+01/01/2021 Rusa 16
+22/07/2022 Harimau 2
+15/04/2020 Laba-Laba 53
+===================
+List Kosong.

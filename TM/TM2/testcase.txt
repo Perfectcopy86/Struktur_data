@@ -1,0 +1,25 @@
+Contoh Masukan
+
+Hero M Taramidia
+KatnissEverdeen F HungerGames
+HarryPotter M HarryPotter
+JonSnow M ASOIAF
+BurlianPasai M Pukat
+Lintang M LaskarPelangi
+
+
+Contoh Keluaran
+
+--------------------
+Hero - M - Taramidia
+KatnissEverdeen - F - HungerGames
+HarryPotter - M - HarryPotter
+--------------------
+List Kosong.
+--------------------
+BurlianPasai - M - Pukat
+--------------------
+List Kosong.
+--------------------
+Lintang - M - LaskarPelangi
+--------------------

@@ -1,0 +1,24 @@
+Contoh Masukan
+
+Alexios 6 ACOdyssey 
+Sam 5 DeathStranding
+Arthur 9 RDR2
+Geralt 7 TheWitcher 
+LeonSKennedy 6 ResidentEvil2
+
+
+Contoh Keluaran
+
+- Sam 5 DeathStranding
+- Arthur 9 RDR2
+- Alexios 6 ACOdyssey
+--------------------
+- Sam 5 DeathStranding
+- Arthur 9 RDR2
+- Geralt 7 TheWitcher
+- LeonSKennedy 6 ResidentEvil2
+--------------------
+- Arthur 9 RDR2
+--------------------
+List Kosong.
+--------------------

@@ -1,0 +1,41 @@
+Contoh Masukan
+
+Kayla 2001111
+Billy 2009882
+Nova 2001234
+Vito 2005432
+Lulu 2004444
+Jihan 2007890
+
+
+Contoh Keluaran
+
+******************
+Queue 1
+Kayla 2001111
+Nova 2001234
+Billy 2009882
+******************
+Queue 1
+Nova 2001234
+Billy 2009882
+******************
+Queue 2
+Kayla 2001111
+******************
+Queue 1
+Vito 2005432
+Nova 2001234
+Billy 2009882
+Lulu 2004444
+******************
+Queue 1
+Billy 2009882
+Lulu 2004444
+Jihan 2007890
+******************
+Queue 2
+Kayla 2001111
+Vito 2005432
+Nova 2001234
+******************
